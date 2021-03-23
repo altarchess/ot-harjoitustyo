@@ -1,0 +1,95 @@
+commit d4667c0aed4a0f1cca7b4592fa986cedc60ba9d0 (HEAD -> master)
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:38:53 2021 +0200
+
+    git add -p
+
+commit 9e9d1959d26a06581c6ff9f0d917de62556497c7
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:37:29 2021 +0200
+
+    eka.txt uusi nimi
+
+commit 250c7b260fdd9eb9e10ca5f730ee5c4aa3145c97
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:28:48 2021 +0200
+
+    teksti2
+
+commit 5567d3ef1a790d23330ee2aa0115572814bb1370
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:27:53 2021 +0200
+
+    teksti
+
+commit b682960cacb8dbb81d90c09bdbd013ccc0aed902
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:19:08 2021 +0200
+
+    stuff kansion lisäys
+:...skipping...
+commit d4667c0aed4a0f1cca7b4592fa986cedc60ba9d0 (HEAD -> master)
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:38:53 2021 +0200
+
+    git add -p
+
+commit 9e9d1959d26a06581c6ff9f0d917de62556497c7
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:37:29 2021 +0200
+
+    eka.txt uusi nimi
+
+commit 250c7b260fdd9eb9e10ca5f730ee5c4aa3145c97
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:28:48 2021 +0200
+
+    teksti2
+
+commit 5567d3ef1a790d23330ee2aa0115572814bb1370
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:27:53 2021 +0200
+
+    teksti
+
+commit b682960cacb8dbb81d90c09bdbd013ccc0aed902
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:19:08 2021 +0200
+
+    stuff kansion lisäys
+
+commit 26fbe0ea31ec818f9266f4ab822dbce84fa4abc6
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:17:56 2021 +0200
+
+    muutetaan
+
+commit a04b0696c5c0bddaea840293140679a42a20901e
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:17:11 2021 +0200
+
+    kolmas.txt lisätty
+
+commit 6a917a2ec0ad99f9143f4cee6a951fc00b539434
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:14:32 2021 +0200
+
+    muutos ja lisäys
+
+commit ae761ce29d7ead330a9c46d3fae71e39b0370c55
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Mar 23 23:08:40 2021 +0200
+
+    tiedosto.txt luotu
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
