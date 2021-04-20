@@ -8,6 +8,8 @@ Sovelluksen avulla voi harjoitella sudokun ratkaisua, ja se osaa myös ratkaista
 
 Sovelluksessa on kolme eri näkymää, "Edit, Solve ja Load"
 
+<img src="https://github.com/altarchess/ot-harjoitustyo/blob/main/harjoitustyo/kayttoliittyma.png">
+
 ## Perusversion tarjoama toiminnallisuus
 
 ### Edit mode
