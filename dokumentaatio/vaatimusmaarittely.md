@@ -2,11 +2,11 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen avulla voi harjoitella sudokun ratkaisua, ja se osaa myös ratkaista niitä.
+Sovelluksen avulla voi harjoitella sudokun ratkaisua, ja se osaa myös ratkaista niitä. (Tehty)
 
 ## Käyttöliittymäluonnos
 
-Sovelluksessa on kolme eri näkymää, "Edit, Solve ja Load"
+Sovelluksessa on kolme eri näkymää, "Edit, Solve ja Load" (Tehty)
 
 <img src="https://github.com/altarchess/ot-harjoitustyo/blob/main/dokumentaatio/kayttoliittyma.png">
 
@@ -14,17 +14,17 @@ Sovelluksessa on kolme eri näkymää, "Edit, Solve ja Load"
 
 ### Edit mode
 
-Kayttaja voi vapaasti muokata sudokua haluamansa näköiseksi taikka tallentaa aseman.
+Kayttaja voi vapaasti muokata sudokua haluamansa näköiseksi taikka tallentaa aseman. (Tehty)
 
 ## Solve mode
 
-Kayttaja voi asettaa oikeita numeroita ruutuihin taikka pyytä neuvon (yhden oikean numeron) tai koko ratkaisun.
+Kayttaja voi asettaa oikeita numeroita ruutuihin taikka pyytä neuvon (yhden oikean numeron) tai koko ratkaisun. (Tehty)
+
+Solve nappia painamalla ohjelma ratkaisee sudokun (Tehty)
 
 ## Load mode
 
-Kayttaja voi ladata tallentamiaan sudokuja
-
-Solve nappia painamalla ohjelma ratkaisee sudokun
+Kayttaja voi ladata tallentamiaan sudokuja (Tehty)
 
 ## Jatkokehitysideoita
 
