@@ -1,10 +1,12 @@
-# Koivisto UCI
+# Sudoku Solver
+Sovelluksella voi muokata, ratkaista, taikka vaikka harjoitella sudokuja. Ohjelma osaa myös tallentaa sudokuja myöhempää varten taikka generoida uusia sudokuja.
 
+## Huomio python versiosta. 
+Sovelluksen toiminta on testattu python 3.9.0 versiolla
 
+## Asennus
+Riippuvuudet voi asentaa komenolla poetry install
 
-Koivisto is an AB-engine for chess written in C++ by Kim Kåhre, Finn Eggers and Eugenio Bruno.
-
-### Supported UCI settings:
-- Hash
-- SyzygyPath (up to 6 pieces)
-- Threads (up to 256)
+## Ohjelman suoritus
+Ohjelman pystyy suorittamaan komennolla:
+poetry run python src/main.py
