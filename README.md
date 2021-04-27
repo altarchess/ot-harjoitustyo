@@ -10,3 +10,5 @@ Riippuvuudet voi asentaa komenolla poetry install
 ## Ohjelman suoritus
 Ohjelman pystyy suorittamaan komennolla:
 poetry run python src/main.py
+
+- [Viikko 5 Release] (https://github.com/altarchess/ot-harjoitustyo/releases/tag/1.0)
