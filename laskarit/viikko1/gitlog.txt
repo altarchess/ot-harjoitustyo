@@ -1,0 +1,114 @@
+commit 0497f8dd01516dbdb7494db12df024001be13b02 (HEAD -> master)
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 21:05:33 2021 +0200
+
+    poista ja lisaa
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ tiedostoja/file3             | 1 +
+ 3 files changed, 1 insertion(+)
+
+commit b9d5868109716a59eac4dea2d36e5e3b9a8b90f5
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 21:01:12 2021 +0200
+
+    lisaa tiedostot
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 4a1181be72b819113ca8ff75c04dfc63172230c6
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:53:28 2021 +0200
+
+    lisaa mutksia
+
+ eka.txt    | 3 +++
+ kolmas.txt | 2 +-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 5d091298757d3b4513b63ee6b42adeedf42c07ca
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:51:38 2021 +0200
+
+    nimea tiedosto.txt uudelleen
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 69ab957205b04c3e067268dc60efad4c46ee284b
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:50:18 2021 +0200
+
+    poista toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7a917a38b157fe9834ea95e87e50595d5bc8f68a
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:44:21 2021 +0200
+
+    muutksia
+
+ tiedosto.txt | 22 ++++------------------
+ 1 file changed, 4 insertions(+), 18 deletions(-)
+
+commit 57882bb8a89a2becadf704ed8d582f37a2d554a2
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:41:47 2021 +0200
+
+    lisaa tekstia
+
+ tiedosto.txt | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+
+commit 230e40a6a183a7e4084284e11d8f507eb20cf68d
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:36:54 2021 +0200
+
+    stuff
+
+ stuff/jokin.tiedosto | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e4567d7b05a5fa5d156d71bcde6d9586b7438c10
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:35:55 2021 +0200
+
+    muuta toinen.txt ja kolmas.txt sisaltoa
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit da965da06fdfd0b5dc363f8cf449acffbb000288
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:34:57 2021 +0200
+
+    kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit cb95e21bc1812af5eefa07de93e61160a34886b3
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:23:01 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit ed5aebf36770a0bd3e2ab8276ec53a3658018877
+Author: Kim Kahre <kim.kahre@helsinki.fi>
+Date:   Tue Nov 9 20:21:07 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
