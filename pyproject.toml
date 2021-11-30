@@ -8,6 +8,8 @@ authors = ["Kim Kahre <kim.kahre@helsinki.fi>"]
 python = "^3.8"
 pygame = "^2.1.0"
 invoke = "^1.6.0"
+pytest = "^6.2.5"
+coverage = "^6.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

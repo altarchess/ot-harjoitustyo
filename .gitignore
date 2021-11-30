@@ -8,3 +8,7 @@ laskarit/viikko2/unicafe/src/__pycache__/
 *.out
 
 src/__pycache__/
+
+.coverage
+
+poetry.lock
