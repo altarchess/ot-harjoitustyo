@@ -69,7 +69,7 @@ def evaluate(board):
 def Negamax(depth, ply, board, alpha, beta):
     if depth == 0:
         return evaluate(board)
-    score = -10**20
+    score = -10**11
     mGen = moveGen()
     mGen.generate(board)
     bestMove = -1
@@ -185,7 +185,7 @@ class Board:
                         if move.start == squareFromXY(lautaX, lautaY):
                             self.makeMove(move)
                 if helpers.cursorOnTextBox(ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, BUTTON_FONT):
-                    Negamax(3, 0, self, -10**20, 10**20)
+                    Negamax(5, 0, self, -10**20, 10**20)
                     if self.bestMove != -1:
                         self.makeMove(self.bestMove)
 
