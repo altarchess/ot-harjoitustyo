@@ -4,6 +4,20 @@ Sovelluksen käyttäjä voi pelata othelloa konetta vastaan, tai vaithoehtoisest
 
 [Release 1](https://github.com/altarchess/ot-harjoitustyo/releases/tag/viikko5)
 
+## Asennus
+
+1. Asenna riippuvuudet komennolla:
+
+```bash
+poetry install
+```
+
+3. Käynnistä sovellus komennolla:
+
+```bash
+poetry run invoke start
+```
+
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
