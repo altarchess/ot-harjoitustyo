@@ -8,6 +8,13 @@ def start(ctx):
     else:
         ctx.run("python3 src/othello-gui.py", pty=True)
 
+@task
+def lint(ctx):
+    ctx.run("pylint src")
+
+@task
+def format(ctx):
+    ctx.run("autopep8 --in-place --recursive src")
 
 @task
 def coverage(ctx):
