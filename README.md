@@ -6,3 +6,21 @@ Sovelluksen käyttäjä voi pelata othelloa konetta vastaan, tai vaithoehtoisest
 [Vaatimusmäärittely](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Tuntikirjanpito](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Komentorivitoiminnot
+
+### Ohjelman suorittaminen
+
+Ohjelman pystyy suorittamaan komennolla:
+
+```bash
+poetry run invoke start
+```
+
+### Pylint
+
+Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```
