@@ -2,6 +2,8 @@
 ## Othello ohjelma
 Sovelluksen käyttäjä voi pelata othelloa konetta vastaan, tai vaithoehtoisesti syöttäämään molempien pelaajien siirrot halutessaan, niin että hän voi pelata kaverinsa kanssa. Käyttäjä voi myös tallentaa pelin ja palata siihen myöhemmin.
 
+[Release 1](https://github.com/altarchess/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
