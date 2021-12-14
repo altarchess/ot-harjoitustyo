@@ -11,7 +11,7 @@ Sovelluksen käyttäjä voi pelata othelloa konetta vastaan, tai vaithoehtoisest
 - Jos painaa "uusi peli" nappia, pitäisi siirtyä näkymään, jossa voi valita haluaako pelata konetta vastaan vai kaverin kanssa. ("New" nappula tehty joka aloittaa uuden pelin, käyttäjä voi itse valita milloin kone ja milloin ihminen pelaa pelin aikana "AI Move" napin avolla)
 
 ## Jatkokehitysideat
-- Useat eri tasot tietokonetta vastaan
+- Useat eri tasot tietokonetta vastaan (Tehty)
 - Koko pelin eikä vain aseman tallennus. Tämä mahdollistaisi pelin läpikäynnin nuolinäppäimillä.
 - Tietokoneanalyysin saaminen pelistä (edellyttää yllä olevaa). Kone analysoisi koko pelin ja piirtäisi sen perusteella evaluaatiograafin.
  
