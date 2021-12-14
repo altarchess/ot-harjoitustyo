@@ -185,7 +185,7 @@ class Board:
         helpers.draw_button(screen, WIN_X, WIN_Y, WINSTATES[win_state], helpers.cursor_on_text_box(
             WIN_X, WIN_Y, WINSTATES[win_state], BUTTON_FONT))
 
-    def tick(self, screen, events, loader):
+    def tick(self, screen, events, loader, options):
         self.render(screen)
 
         helpers.draw_button(screen, ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, helpers.cursor_on_text_box(
@@ -196,6 +196,8 @@ class Board:
             NEW_X, NEW_Y, NEW_T, BUTTON_FONT))
         helpers.draw_button(screen, LOAD_X, LOAD_Y, LOAD_T, helpers.cursor_on_text_box(
             LOAD_X, LOAD_Y, LOAD_T, BUTTON_FONT))
+        helpers.draw_button(screen, OPTIONS_X, OPTIONS_Y, OPTIONS_T, helpers.cursor_on_text_box(
+            OPTIONS_X, OPTIONS_Y, OPTIONS_T, BUTTON_FONT))
 
         for event in events:
             if event.type == pygame.MOUSEBUTTONDOWN:
@@ -211,7 +213,7 @@ class Board:
                         if move.start == square_from_xy(lauta_x, lauta_y):
                             self.make_move(move)
                 if helpers.cursor_on_text_box(ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, BUTTON_FONT):
-                    alpha_beta(5, 0, self, -10**20, 10**20)
+                    alpha_beta(options.get_setting("AI Level"), 0, self, -10**20, 10**20)
                     if self.best_move != -1:
                         self.make_move(self.best_move)
 

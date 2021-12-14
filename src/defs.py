@@ -4,8 +4,9 @@ import pygame
 SAVE_FILE = "saved.othello"
 
 # Kayttoliittyman moodit
-PLAY = 1
-LOAD = 2
+PLAY     = 1
+LOAD     = 2
+SETTINGS = 3
 
 # Naytto
 WIDTH = 500
@@ -40,8 +41,12 @@ NEW_T = "New"
 LOAD_X = X_OFFSET + 205
 LOAD_Y = X_OFFSET
 LOAD_T = "Load"
-WIN_X = X_OFFSET + 300
+WIN_X = X_OFFSET + 360
 WIN_Y = X_OFFSET
+OPTIONS_X = X_OFFSET + 260
+OPTIONS_Y = X_OFFSET
+OPTIONS_T = "Options"
+OPTIONS_Y_OFFSET = 50
 PREVIOUS_X = X_OFFSET
 PREVIOUS_Y = X_OFFSET
 PREVIOUS_T = "Previous"
