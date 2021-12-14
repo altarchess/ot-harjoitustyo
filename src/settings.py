@@ -11,7 +11,7 @@ class Setting:
 class Settings:
     def __init__(self):
         self.settings = []
-        self.settings.append(Setting("AI Level", [1, 2, 3, 4, 5], 4))
+        self.settings.append(Setting("AI Level", [1, 2, 3, 4, 5], 2))
 
     def get_setting(self, name):
         for setting in self.settings:
@@ -34,6 +34,6 @@ class Settings:
                 for i in range(len(self.settings)):   
                     if helpers.cursor_on_text_box(X_OFFSET, OPTIONS_Y_OFFSET * (i + 1), self.settings[i].name + " " + str(self.settings[i].value_array[self.settings[i].index]), BUTTON_FONT):
                         self.settings[i].index += 1
-                        if self.settings[i].index >= len(self.settings):
+                        if self.settings[i].index >= len(self.settings[i].value_array):
                             self.settings[i].index = 0
                         
