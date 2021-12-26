@@ -5,6 +5,11 @@ class Setting:
 
     """
     Luokka kuvaa yksittaista asetusta
+
+    Attributes:
+        name: Asetuksen nimi
+        value_array: Lista asetuksen arvoista
+        index: tamanhetkinen valittu arvon indexi
     """
 
     def __init__(self, name, value_array, index=0):
@@ -17,6 +22,9 @@ class Settings:
 
     """
     Luokka kasittelee asetuksia yhtenaisesti.
+
+    Attributes:
+        settings: lista asetuksista
     """
 
     def __init__(self):

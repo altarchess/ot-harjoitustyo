@@ -9,6 +9,9 @@ class SettingsEvents:
 
     """
     Luokka kasittelee asetusvalikon specifeja tapahtumia
+
+    Attributes:
+        settings: asetukset joita muokataan tapahtumien mukaan
     """
 
     def __init__(self):

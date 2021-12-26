@@ -6,6 +6,10 @@ class MoveGen:
 
     """
     Siirtogeneraattoria hallitseva luokka.
+
+    Attributes:
+        move_list: Lista siirroista
+
     """
 
     def __init__(self):

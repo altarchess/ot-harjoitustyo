@@ -10,6 +10,9 @@ class LoaderEvents:
 
     """
     Kasitteele latausvalikon  specifeja tapahtumia
+
+    Attributes:
+        loader: lataaja joka tottelee tapahtumia
     """
 
     def __init__(self):

@@ -15,6 +15,9 @@ class GameEvents:
 
     """
     Luokka kasittelee pelimoodissa tapahtumia
+
+    Attributes:
+        board: Lauta jota tapahtumat koskee
     """
 
     def __init__(self):

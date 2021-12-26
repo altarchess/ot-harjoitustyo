@@ -8,6 +8,10 @@ class Loader():
 
     """
     Luokan vastuulla on asemien tallennusta ja lataamista
+
+    Attributes:
+        self.states: lista tallenetuista asemista
+        self.cursor: mita asemaa katsotaan
     """
 
     def __init__(self):

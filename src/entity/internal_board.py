@@ -53,6 +53,12 @@ class Board:
 
     """
     Luokka joka kuvaa othello lautaa
+
+    Attributes:
+        piece_list: lista aseman nappuloista
+        active_player: kenen siirtovuoro
+        best_move: arvo minka Alpha-Beta funktio asettaa, aseman "Paras siirto"
+
     """
 
     def __init__(self):
