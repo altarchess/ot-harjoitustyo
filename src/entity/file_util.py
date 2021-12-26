@@ -1,6 +1,6 @@
 import copy
 import os
-import entity.internalboard
+import entity.internal_board
 from defs import *
 
 
@@ -11,13 +11,13 @@ class Loader():
             savefile = open(SAVE_FILE, "r")
             rivit = savefile.readlines()
             for rivi in rivit:
-                board = entity.internalboard.Board()
+                board = entity.internal_board.Board()
                 for i in range(N_SQUARES):
                     board.set_piece(i, int(rivi[i]) - 1)
                 self.states.append(copy.deepcopy(board))
             savefile.close()
         if len(self.states) == 0:
-            self.states.append(entity.internalboard.Board())
+            self.states.append(entity.internal_board.Board())
         self.cursor = len(self.states) - 1
 
     def add(self, board):

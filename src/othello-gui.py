@@ -49,5 +49,5 @@ while RUNNING:
     # piirra!
     pygame.display.flip()
 
-loader.save()
+loader.loader.save()
 pygame.quit()

@@ -1,6 +1,6 @@
 import copy
 from defs import *
-from engine.movegen import MoveGen
+from engine.move_gen import MoveGen
 
 
 def alpha_beta(depth, ply, board, alpha, beta):

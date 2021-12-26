@@ -1,16 +1,16 @@
 import pygame
-import entity.fileutil
-import gui.externalboard
-import gui.externalloader
+import entity.file_util
+import gui.external_board
+import gui.external_loader
 from gui import guihelpers
 from defs import PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT, NEXT_X, NEXT_Y, NEXT_T
 
 class LoaderEvents:
     def __init__(self):
-        self.loader = entity.fileutil.Loader()
+        self.loader = entity.file_util.Loader()
 
     def tick(self, screen, events, options):
-        gui.externalboard.render(
+        gui.external_board.render(
             screen, options, self.loader.states[self.loader.cursor])
         for event in events:
             if event.type == pygame.MOUSEBUTTONDOWN:
@@ -20,5 +20,4 @@ class LoaderEvents:
                 if guihelpers.cursor_on_text_box(NEXT_X, NEXT_Y, NEXT_T, BUTTON_FONT):
                     self.loader.dec_cursor()
 
-        gui.externalloader.render(screen)
-        
+        gui.external_loader.render(screen)

@@ -1,6 +1,6 @@
 import math
 from defs import *
-import engine.movegen
+import engine.move_gen
 
 # Auttaja funktiot
 
@@ -46,18 +46,18 @@ class Board:
     def get_active_player(self):
         return self.__active_player
 
-    def make_move(self, move: engine.movegen.Move):
+    def make_move(self, move: engine.move_gen.Move):
         # We asume that the move is legal
         for i in range(move.steps):
             self.__piece_list[move.start + i * move.direction] = move.color
         self.__active_player = 0 - move.color
 
     def is_win(self):
-        gen = engine.movegen.MoveGen()
+        gen = engine.move_gen.MoveGen()
         gen.generate(self)
         if len(gen.move_list) == 0:
             self.__active_player = 0 - self.__active_player
-            gen = engine.movegen.MoveGen()
+            gen = engine.move_gen.MoveGen()
             gen.generate(self)
             if len(gen.move_list) == 0:
                 score = 0

@@ -1,7 +1,7 @@
 import pygame
 from defs import *
-from entity.internalboard import *
-import engine.movegen
+from entity.internal_board import *
+import engine.move_gen
 from gui import guihelpers
 
 
@@ -37,7 +37,7 @@ def render(screen, options, board):
                                                    2, Y_OFFSET + y * CELL_SIZE + CELL_SIZE / 2), PIECE_SIZE)
 
     if options.settings.get_setting(SHOW_LEGAL) == "ON":
-        gen = engine.movegen.MoveGen()
+        gen = engine.move_gen.MoveGen()
         gen.generate(board)
         for move in gen.move_list:
             pygame.draw.circle(screen, GRAY, (X_OFFSET + x_from_square(move.start) * CELL_SIZE + CELL_SIZE /

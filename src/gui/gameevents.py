@@ -1,8 +1,8 @@
 import math
 import pygame
-from entity.internalboard import *
-import gui.externalboard
-import engine.movegen
+from entity.internal_board import *
+import gui.external_board
+import engine.move_gen
 import engine.ai
 from gui import guihelpers
 from defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T 
@@ -16,7 +16,7 @@ class GameEvents:
         self.board = Board()
 
     def tick(self, screen, events, loader, options):
-        gui.externalboard.render(screen, options, self.board)
+        gui.external_board.render(screen, options, self.board)
 
         guihelpers.draw_button(screen, ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, guihelpers.cursor_on_text_box(
             ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, BUTTON_FONT))
@@ -37,7 +37,7 @@ class GameEvents:
                 lauta_x = math.floor((x-X_OFFSET)/CELL_SIZE)
                 lauta_y = math.floor((y-Y_OFFSET)/CELL_SIZE)
                 if not (lauta_x >= COLUMNS or lauta_x < 0 or lauta_y >= ROWS or lauta_y < 0):
-                    gen = engine.movegen.MoveGen()
+                    gen = engine.move_gen.MoveGen()
                     gen.generate(self.board)
                     for move in gen.move_list:
                         if move.start == square_from_xy(lauta_x, lauta_y):

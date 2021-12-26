@@ -1,6 +1,6 @@
 import pygame
 import entity.settings
-import gui.externalsettings
+import gui.external_settings
 from gui import guihelpers
 from defs import X_OFFSET, OPTIONS_Y_OFFSET, BUTTON_FONT
 
@@ -9,7 +9,7 @@ class SettingsEvents:
         self.settings = entity.settings.Settings()
 
     def tick(self, screen, events):
-        gui.externalsettings.render(screen, events, self.settings)
+        gui.external_settings.render(screen, events, self.settings)
         for event in events:
             if event.type == pygame.MOUSEBUTTONDOWN:
                 for i in range(len(self.settings.settings)):
@@ -17,4 +17,3 @@ class SettingsEvents:
                         self.settings.settings[i].index += 1
                         if self.settings.settings[i].index >= len(self.settings.settings[i].value_array):
                             self.settings.settings[i].index = 0
-                            

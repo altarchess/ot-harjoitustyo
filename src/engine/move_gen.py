@@ -1,4 +1,4 @@
-import entity.internalboard
+import entity.internal_board
 from defs import *
 
 
@@ -7,8 +7,8 @@ class MoveGen:
         self.move_list = []
 
     def slider(self, board, square, direction):
-        square_x = entity.internalboard.x_from_square(square)
-        square_y = entity.internalboard.y_from_square(square)
+        square_x = entity.internal_board.x_from_square(square)
+        square_y = entity.internal_board.y_from_square(square)
         xmod = 0
         ymod = 0
 
