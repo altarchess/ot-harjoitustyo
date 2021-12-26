@@ -1,7 +1,7 @@
 import pygame
 import entity.settings
 import gui.externalsettings
-import guihelpers
+import gui.guihelpers as guihelpers
 from defs import *
 
 class SettingsEvents:

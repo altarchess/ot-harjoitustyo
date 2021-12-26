@@ -1,4 +1,3 @@
-import copy
 import entity.internalboard
 from defs import *
 

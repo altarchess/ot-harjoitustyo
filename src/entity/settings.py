@@ -1,4 +1,3 @@
-import guihelpers
 from defs import *
 
 

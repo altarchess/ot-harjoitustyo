@@ -5,7 +5,7 @@ from entity.internalboard import *
 import gui.externalboard
 import engine.movegen
 import engine.ai
-import guihelpers
+import gui.guihelpers as guihelpers
 
 
 class GameEvents:

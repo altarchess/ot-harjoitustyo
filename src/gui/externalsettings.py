@@ -1,5 +1,5 @@
 import pygame
-import guihelpers
+import gui.guihelpers as guihelpers
 from defs import *
 
 

@@ -3,7 +3,7 @@ import os
 import pygame
 import entity.internalboard
 import gui.externalboard
-import guihelpers
+import gui.guihelpers as guihelpers
 from defs import *
 
 
