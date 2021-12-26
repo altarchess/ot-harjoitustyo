@@ -28,6 +28,8 @@ poetry run invoke start
 
 [Kayttöohje](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
+[Arkkitehtuurikuvaus](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/Arkkitehtuurikuvaus.md)
+
 ## Komentorivitoiminnot
 
 ### Ohjelman suorittaminen
