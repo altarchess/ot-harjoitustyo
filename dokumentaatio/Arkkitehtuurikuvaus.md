@@ -16,3 +16,11 @@ Käyttöliittymä sisältää kolme erillistä näkymää:
 
 Jokainen näistä on toteutettu omana luokkanaan. Näkymistä yksi on aina kerrallaan näkyvänä. Pelilooppi hallitsee mitä milloinkiin [nähdään](https://github.com/altarchess/ot-harjoitustyo/blob/master/src/othello_gui.py)
 
+## Sovelluslogiikka
+Sovelluksen tietomallin muodostavat lauta ja latausluokka
+
+![image](https://user-images.githubusercontent.com/57199282/147420890-8c8a7df7-a58a-4b6b-8ca8-67a7d6e4ce38.png)
+
+
+
+
