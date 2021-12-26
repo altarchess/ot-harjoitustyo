@@ -45,3 +45,13 @@ Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa k
 ```bash
 poetry run invoke lint
 ```
+
+### Testikattavuus
+
+Testikattavuusraportin voi generoida komennolla:
+
+```
+poetry run invoke coverage-report
+```
+
+Raportti generoituu htmlcov-hakemistoon.
