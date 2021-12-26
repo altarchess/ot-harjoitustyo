@@ -3,7 +3,7 @@ import pygame
 import gui.gameevents
 import gui.settingsevents
 import gui.loaderevents
-import gui.guihelpers as guihelpers
+from gui import guihelpers
 from defs import *
 
 # luodaan ruutu

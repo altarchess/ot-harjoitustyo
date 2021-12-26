@@ -2,8 +2,8 @@ import pygame
 import entity.fileutil
 import gui.externalboard
 import gui.externalloader
-import gui.guihelpers as guihelpers
-from defs import *
+from gui import guihelpers
+from defs import PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT, NEXT_X, NEXT_Y, NEXT_T
 
 class LoaderEvents:
     def __init__(self):
@@ -21,3 +21,4 @@ class LoaderEvents:
                     self.loader.dec_cursor()
 
         gui.externalloader.render(screen)
+        

@@ -1,8 +1,8 @@
 import pygame
 import entity.settings
 import gui.externalsettings
-import gui.guihelpers as guihelpers
-from defs import *
+from gui import guihelpers
+from defs import X_OFFSET, OPTIONS_Y_OFFSET, BUTTON_FONT
 
 class SettingsEvents:
     def __init__(self):
@@ -17,3 +17,4 @@ class SettingsEvents:
                         self.settings.settings[i].index += 1
                         if self.settings.settings[i].index >= len(self.settings.settings[i].value_array):
                             self.settings.settings[i].index = 0
+                            

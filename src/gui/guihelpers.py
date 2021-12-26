@@ -1,5 +1,5 @@
 import pygame
-from defs import *
+from defs import GRAY, RED, BLACK, BUTTON_FONT
 
 # Piirra nappula tekstilla
 

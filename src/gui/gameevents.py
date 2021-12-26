@@ -1,11 +1,14 @@
 import math
 import pygame
-from defs import *
 from entity.internalboard import *
 import gui.externalboard
 import engine.movegen
 import engine.ai
-import gui.guihelpers as guihelpers
+from gui import guihelpers
+from defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T 
+from defs import SAVE_X, SAVE_Y, SAVE_T, LOAD_X, LOAD_Y, LOAD_T
+from defs import NEW_X, NEW_Y, NEW_T, OPTIONS_X, OPTIONS_T, OPTIONS_T
+from defs import BUTTON_FONT, CELL_SIZE, X_OFFSET, Y_OFFSET
 
 
 class GameEvents:

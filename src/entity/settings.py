@@ -19,3 +19,4 @@ class Settings:
             if name == setting.name:
                 return setting.value_array[setting.index]
         return 0
+        

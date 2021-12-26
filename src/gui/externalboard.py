@@ -2,7 +2,7 @@ import pygame
 from defs import *
 from entity.internalboard import *
 import engine.movegen
-import gui.guihelpers as guihelpers
+from gui import guihelpers
 
 
 def render(screen, options, board):
