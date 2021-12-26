@@ -52,6 +52,9 @@ class Board:
             self.__piece_list[move.start + i * move.direction] = move.color
         self.__active_player = 0 - move.color
 
+    def make_null_move(self):
+        self.__active_player = 0 - self.__active_player
+
     def is_win(self):
         gen = engine.move_gen.MoveGen()
         gen.generate(self)

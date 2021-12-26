@@ -4,9 +4,9 @@ import sys
 @task
 def start(ctx):
     if sys.platform == "win32":
-        ctx.run("python src/othello-gui.py")
+        ctx.run("python src/othello_gui.py")
     else:
-        ctx.run("python3 src/othello-gui.py", pty=True)
+        ctx.run("python3 src/othello_gui.py", pty=True)
 
 @task
 def lint(ctx):

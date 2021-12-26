@@ -2,7 +2,7 @@ import pygame
 from defs import *
 from entity.internal_board import *
 import engine.move_gen
-from gui import guihelpers
+from gui import gui_helpers
 
 
 def render(screen, options, board):
@@ -44,5 +44,5 @@ def render(screen, options, board):
                                               2, Y_OFFSET + y_from_square(move.start) * CELL_SIZE + CELL_SIZE / 2), PIECE_SIZE / 2)
 
     win_state = board.is_win()
-    guihelpers.draw_button(screen, WIN_X, WIN_Y, WINSTATES[win_state], guihelpers.cursor_on_text_box(
+    gui_helpers.draw_button(screen, WIN_X, WIN_Y, WINSTATES[win_state], gui_helpers.cursor_on_text_box(
         WIN_X, WIN_Y, WINSTATES[win_state], BUTTON_FONT))

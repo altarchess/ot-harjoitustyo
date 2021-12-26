@@ -9,6 +9,10 @@ def alpha_beta(depth, ply, board, alpha, beta):
     score = -10**11
     gen = MoveGen()
     gen.generate(board)
+    if len(gen.move_list) == 0:
+        new_board = copy.deepcopy(board)
+        new_board.make_null_move()
+        return -alpha_beta(depth - 1, ply + 1, new_board, -beta, -alpha)
     best_move = -1
     for move in gen.move_list:
         new_board = copy.deepcopy(board)
