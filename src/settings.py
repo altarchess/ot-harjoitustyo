@@ -20,6 +20,8 @@ class Settings:
         for setting in self.settings:
             if name == setting.name:
                 return setting.value_array[setting.index]
+        return 0
+        
 
     def render(self, screen, events):
         guihelpers.draw_button(screen, ENGINE_MOVE_X, ENGINE_MOVE_Y, "Go Back", guihelpers.cursor_on_text_box(

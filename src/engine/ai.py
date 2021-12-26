@@ -1,7 +1,6 @@
 import copy
 from defs import *
 from engine.movegen import MoveGen
-import othelloboard.internalboard
 
 
 def alpha_beta(depth, ply, board, alpha, beta):
