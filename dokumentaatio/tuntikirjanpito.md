@@ -7,4 +7,5 @@
 |14.12 | 3 | asetukset, kayttöohje jne|
 |25.12 | 4 | Koodin laatuparannuksia |
 |26.12 | 6 | pylint, pytest, dokumentaatio |
-| yht   | 23   |  
+|26.12 | 3 | docstring, dokumentaatio |
+| yht   | 26   |  
