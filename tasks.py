@@ -9,6 +9,10 @@ def start(ctx):
         ctx.run("python3 src/othello_gui.py", pty=True)
 
 @task
+def test(ctx):
+    ctx.run("pytest src")
+
+@task
 def lint(ctx):
     ctx.run("pylint src")
 
