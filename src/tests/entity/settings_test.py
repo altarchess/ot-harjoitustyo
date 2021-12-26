@@ -2,7 +2,7 @@ import unittest
 from entity.settings import Settings
 from misc.defs import SHOW_LEGAL
 
-class TestBoard(unittest.TestCase):
+class TestSettings(unittest.TestCase):
     def setUp(self):
         self.settings = Settings()
 

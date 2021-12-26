@@ -3,7 +3,7 @@ import copy
 from entity.file_util import Loader
 from entity.internal_board import Board
 
-class TestBoard(unittest.TestCase):
+class TestFileUtil(unittest.TestCase):
     def setUp(self):
         self.loader = Loader()
 

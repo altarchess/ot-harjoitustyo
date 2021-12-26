@@ -3,7 +3,7 @@ from entity.internal_board import Board
 from misc.defs import N_SQUARES
 import engine.ai
 
-class TestBoard(unittest.TestCase):
+class TestAI(unittest.TestCase):
 
     # Idea on etta generoinnin pitaa tasmata taysin kaikissa asemissa tiettyyn syvyteen, joten tama
     # lienee erittain tehokas tapa testata

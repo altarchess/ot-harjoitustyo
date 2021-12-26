@@ -15,7 +15,7 @@ def perft(board, depth):
         node_count += perft(new_board, depth - 1)
     return max(1, node_count)
 
-class TestBoard(unittest.TestCase):
+class TestMoveGen(unittest.TestCase):
     def setUp(self):
         self.board = Board()
 
