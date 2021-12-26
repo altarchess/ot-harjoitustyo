@@ -8,7 +8,6 @@ from misc.defs import WIDTH, HEIGHT, PLAY, ENGINE_MOVE_X, ENGINE_MOVE_Y
 from misc.defs import OPTIONS_X, OPTIONS_Y, OPTIONS_T, BUTTON_FONT
 from misc.defs import LOAD_X, LOAD_Y, LOAD_T, BLACK, LOAD, SETTINGS
 
-# luodaan ruutu
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Othello GUI")
 
@@ -16,10 +15,13 @@ ACTIVE_SCREEN = PLAY
 game = gui.game_events.GameEvents()
 loader = gui.loader_events.LoaderEvents()
 options = gui.settings_events.SettingsEvents()
-# ns. Pelilooppi.
+
 RUNNING = True
 while RUNNING:
-    # Tarkistetaan vain yrittaako kayttaja sulkea ohjelman.
+
+    """Ns. Pelilooppi. Taalla kaydaan kerran ruudun rendausta kohti
+    """
+   
     events = pygame.event.get()
     for event in events:
         if event.type == pygame.QUIT:
@@ -38,7 +40,6 @@ while RUNNING:
                     game.board = copy.deepcopy(loader.loader.states[loader.loader.cursor])
                     ACTIVE_SCREEN = PLAY
 
-    # Asetetaan se taustavariksi
     screen.fill(BLACK)
 
     if ACTIVE_SCREEN == PLAY:
@@ -48,7 +49,6 @@ while RUNNING:
     if ACTIVE_SCREEN == SETTINGS:
         options.tick(screen, events)
 
-    # piirra!
     pygame.display.flip()
 
 loader.loader.save()

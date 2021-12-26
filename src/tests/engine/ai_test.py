@@ -5,9 +5,17 @@ import engine.ai
 
 class TestAI(unittest.TestCase):
 
-    # Idea on etta generoinnin pitaa tasmata taysin kaikissa asemissa tiettyyn syvyteen, joten tama
-    # lienee erittain tehokas tapa testata
+    """
+    Luokka evaluaatio ja alpha_beta funktion testaukselle
+    """
+
     def test_evaluate(self):
+
+        """
+        Testaa evaluaatio funktiota antamalla aseman jossa valkoisen pitäisi olla parempi, 
+        ja aseman jossa mustalla pitaisi olla paremman nappulat
+        """
+
         board = Board()
         for i in range(N_SQUARES):
             board.set_piece(i, 1)
@@ -17,6 +25,12 @@ class TestAI(unittest.TestCase):
         self.assertLess(engine.ai.evaluate(board), 0)
 
     def test_alpha_beta(self):
+
+        """
+        Testaa alpha_beta funktiota antamalla ohjelmalle aseman jossa valkoisella pitaisi olla erinomainen asema, 
+        ja aseman jossa mustalla pitäisi olla paremman nappulat 
+        """
+
         board = Board()
         for i in range(N_SQUARES):
             board.set_piece(i, 1)

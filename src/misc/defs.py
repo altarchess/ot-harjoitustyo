@@ -1,5 +1,10 @@
 import pygame
 
+
+"""
+Ohjelmassa kaytettavien vakioiden maaritelmat       
+"""
+
 # Tiedosto jonne othello asemat tallennetaan
 SAVE_FILE = "saved.othello"
 

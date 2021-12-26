@@ -4,6 +4,15 @@ from entity.internal_board import Board
 from engine.move_gen import MoveGen
 
 def perft(board, depth):
+
+    """ 
+    Rekursiivinen funktio joka laskee kuinka monta lehtea on solmusta seuraavassa puussa.
+    Taman avulla voidaan tarkistaa siirtogeneraattorin paikkaansapitavyys
+
+    Returns:
+        int: lehtien maara
+    """
+
     if depth == 0:
         return 1
     gen = MoveGen()
@@ -16,6 +25,12 @@ def perft(board, depth):
     return max(1, node_count)
 
 class TestMoveGen(unittest.TestCase):
+
+    """
+    Siirtogeneroinnin testaus. Perft testaus on hyvin kattava, ja riittaa yksinaan. 
+    En loytanyt othellosta tietoa, mutta https://www.chessprogramming.org/Perft oli
+    hyva yleinen tiedon lahde
+    """
     def setUp(self):
         self.board = Board()
 
