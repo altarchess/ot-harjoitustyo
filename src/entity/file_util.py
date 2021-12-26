@@ -5,7 +5,16 @@ from misc.defs import *
 
 
 class Loader():
+
+    """
+    Luokan vastuulla on asemien tallennusta ja lataamista
+    """
+
     def __init__(self):
+        """
+        Lataa tallenustiedostosta aijemmin tallenetut asemat muistiin
+        """
+
         self.states = []
         if os.path.isfile(SAVE_FILE):
             savefile = open(SAVE_FILE, "r")
@@ -21,9 +30,20 @@ class Loader():
         self.cursor = len(self.states) - 1
 
     def add(self, board):
+        """
+        lisaa annetun aseman muistiin
+
+        Args: 
+            board: othello-lauta objekti
+        """
+
         self.states.append(copy.deepcopy(board))
 
     def save(self):
+        """
+        Tallentaa listassa olevat asemat levylle.
+        """
+
         savefile = open(SAVE_FILE, "w+")
         lines = []
         for board in self.states:
@@ -36,10 +56,18 @@ class Loader():
         savefile.close()
 
     def dec_cursor(self):
+        """
+        Kasvattaa indexia jota vastaavaa olevaa asemaa tarkastelemme kayttoliittymassa
+        """
+
         self.cursor -= 1
         self.cursor = max(self.cursor, 0)
 
     def inc_cursor(self):
+        """
+        Laskee indexia jota vastaavaa olevaa asemaa tarkastelemme kayttoliittymassa
+        """
+
         self.cursor += 1
         if self.cursor > len(self.states) - 1:
             self.cursor = len(self.states) - 1

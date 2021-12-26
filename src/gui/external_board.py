@@ -6,6 +6,15 @@ from gui import gui_helpers
 
 
 def render(screen, options, board):
+    """
+    funktio othello laudan piirtoa varten
+
+    Args:
+        screen: pygame ruutu
+        options: asetukset, kuten listattu entity.settings.Settings luokassa
+        board: othello-lauta objekti joka halutaan pirtaa
+    """
+
     # piirra tausta
     pygame.draw.rect(screen, GREEN, (X_OFFSET, Y_OFFSET,
                                      CELL_SIZE * COLUMNS, CELL_SIZE * ROWS))

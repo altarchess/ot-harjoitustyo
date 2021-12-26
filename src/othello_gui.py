@@ -21,7 +21,7 @@ while RUNNING:
 
     """Ns. Pelilooppi. Taalla kaydaan kerran ruudun rendausta kohti
     """
-   
+
     events = pygame.event.get()
     for event in events:
         if event.type == pygame.QUIT:
@@ -37,7 +37,8 @@ while RUNNING:
                 if ACTIVE_SCREEN == PLAY:
                     ACTIVE_SCREEN = LOAD
                 else:
-                    game.board = copy.deepcopy(loader.loader.states[loader.loader.cursor])
+                    game.board = copy.deepcopy(
+                        loader.loader.states[loader.loader.cursor])
                     ACTIVE_SCREEN = PLAY
 
     screen.fill(BLACK)

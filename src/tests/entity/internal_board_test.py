@@ -5,6 +5,7 @@ from entity.internal_board import Board, x_from_square, y_from_square
 from entity.internal_board import square_from_xy
 from engine.move_gen import Move
 
+
 class TestBoard(unittest.TestCase):
 
     """
@@ -14,7 +15,6 @@ class TestBoard(unittest.TestCase):
     """
 
     def setUp(self):
-
         """
         Luodaan monessa testissa kaytettava lauta
         """
@@ -22,7 +22,6 @@ class TestBoard(unittest.TestCase):
         self.board = Board()
 
     def test_x_from_square(self):
-
         """
         Tarkistaa vaakasuoran kordinaatin laskennan korrektiutta
         kahden esimerkin avulla. (Kordinaattit ja ruudut othello
@@ -33,7 +32,6 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(x_from_square(25), 1)
 
     def test_y_from_square(self):
-
         """
         Tarkistaa pystysuoran kordinaatin laskennan korrektiutta
         kahden esimerkin avulla. (Kordinaattit ja ruudut othello
@@ -44,8 +42,6 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(y_from_square(25), 3)
 
     def test_square_from_xy(self):
-
-        
         """
         Tarkistaa vaaka- ja pysty-suoran kordinaattien muuntamista
         ruuduksi othello laudalla.
@@ -55,7 +51,6 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(square_from_xy(1, 3), 25)
 
     def test_set_piece(self):
-        
         """
         Tarkistaa satunnaisilla arvoilla, toimiiko othello nappulan asetus oikein
         ristikkoon.
@@ -66,9 +61,7 @@ class TestBoard(unittest.TestCase):
             self.board.set_piece(i, random_piece)
             self.assertEqual(random_piece, self.board.get_piece_on_square(i))
 
-
     def test_get_piece_on_cord(self):
-
         """
         Tarkistaa satunnaislukuja kayttaen, toimiiko nappulan ruutua kohti
         palauttava funktio oikein. Oletuksena on etta muut funktiot toimivat oikein,
@@ -79,10 +72,10 @@ class TestBoard(unittest.TestCase):
         for i in range(N_SQUARES):
             random_piece = random.randint(-1, 1)
             self.board.set_piece(i, random_piece)
-            self.assertEqual(random_piece, self.board.get_piece_on_cord(x_from_square(i), y_from_square(i)))
+            self.assertEqual(random_piece, self.board.get_piece_on_cord(
+                x_from_square(i), y_from_square(i)))
 
     def test_make_move(self):
-
         """
         Testaa kahden eri siirron jalkeen taytettyja ruutuja ja siten siirron teon toimivuutta.
         """
@@ -94,7 +87,6 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(1, self.board.get_piece_on_square(3))
 
     def test_is_win(self):
-
         """
         Testaa funktiota joka ilmoittaa onko asema voittava, tayttamalla ruudukko tayteen tiettya varia.
         Tai myoskin jattamalla viela tyhjia ruutuja niin etta sen tulisi ilmoittaa etta peli on viela 
@@ -110,7 +102,6 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(BLACK_WIN, self.board.is_win())
 
     def test_make_null_move(self):
-
         """"
         Testaa tyhjan siirron pelaamista varten tehtya funktiota. Tyhja siirto muuttaa vain
         siirtovuoroa

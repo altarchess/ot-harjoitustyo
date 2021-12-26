@@ -4,6 +4,21 @@ from engine.move_gen import MoveGen
 
 
 def alpha_beta(depth, ply, board, alpha, beta):
+    """
+    Alpha-Beta on minimaxin algoritmin tehostus (https://www.chessprogramming.org/Alpha-Beta).
+    Tarkkaan ottaen tama on Alpha-Beta negamaxin paalla (https://www.chessprogramming.org/Negamax).
+
+    Args: 
+        depth: kuinka paljon syvemalle meidan on viela tutkailtava puuta
+        ply: kuinka syvalla ollaan puun juureen verrattuna
+        board: othello-lauta objekti
+        Alpha & Beta: Alpha-Beta algoritmin Alpha ja Beta
+
+
+    Returns:
+        Puun minimax optimaalinen arvo. Sijoittaa myös parhaan siirron emolautaan board.best_move
+    """
+
     if depth == 0:
         return evaluate(board)
     score = -10**11
@@ -30,6 +45,15 @@ def alpha_beta(depth, ply, board, alpha, beta):
 
 
 def evaluate(board):
+    """
+    Aseman arviointi. Asema arvioidaan yksinkertaisella idealla jossa ns asemallisesta
+    pelista vastaa ns. Piece Square Tables (https://www.chessprogramming.org/Piece-Square_Tables).
+
+    Returns:
+        Arvion aseman laadusta sille pelaajalle jonka siirtovuoro on. Esim jos musta on voittamaisillaan,
+        ja on mustan vuoro, palauttaisi funktio todennakoisesti positiivisen luvun.
+    """
+
     pst_score = 0
     for i in range(N_SQUARES):
         pst_score += board.get_piece_on_square(i) * (PST[i] + 50)

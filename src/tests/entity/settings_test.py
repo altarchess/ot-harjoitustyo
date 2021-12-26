@@ -2,6 +2,7 @@ import unittest
 from entity.settings import Settings
 from misc.defs import SHOW_LEGAL
 
+
 class TestSettings(unittest.TestCase):
 
     """
@@ -9,7 +10,6 @@ class TestSettings(unittest.TestCase):
     """
 
     def setUp(self):
-
         """
         Luodaan testeissa kaytettava Settings objekti
         """
@@ -17,7 +17,6 @@ class TestSettings(unittest.TestCase):
         self.settings = Settings()
 
     def test_get_setting(self):
-
         """
         Testaa palauttaako get_setting funktio oikean arvon
         """

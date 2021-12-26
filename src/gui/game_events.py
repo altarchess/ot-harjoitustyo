@@ -5,17 +5,34 @@ import gui.external_board
 import engine.move_gen
 import engine.ai
 from gui import gui_helpers
-from misc.defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T 
+from misc.defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T
 from misc.defs import SAVE_X, SAVE_Y, SAVE_T, LOAD_X, LOAD_Y, LOAD_T
 from misc.defs import NEW_X, NEW_Y, NEW_T, OPTIONS_X, OPTIONS_T, OPTIONS_T
 from misc.defs import BUTTON_FONT, CELL_SIZE, X_OFFSET, Y_OFFSET
 
 
 class GameEvents:
+
+    """
+    Luokka kasittelee pelimoodissa tapahtumia
+    """
+
     def __init__(self):
         self.board = Board()
 
     def tick(self, screen, events, loader, options):
+        """
+        Jokaisen ruudun piiroksen aikana kasitellaan hiirinappauspainallukset 
+        mikali painetaan jotain nappulaa tai halutaa tehda siirto. 
+        funktio myos pirtaa othello-laudan.
+
+        Args:
+            screen: pygame ruutu johon lauta halutaan pirtaa
+            events: pygamen tapahtumat joita kasitellaan
+            loader: kaytossa oleva asemien lataaja. Tarvitaan Mikali kayttaja haluaa tallentaa aseman
+            options: Laudan ja AI:n asetukset
+        """
+
         gui.external_board.render(screen, options, self.board)
 
         gui_helpers.draw_button(screen, ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, gui_helpers.cursor_on_text_box(

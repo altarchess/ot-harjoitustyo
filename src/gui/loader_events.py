@@ -5,11 +5,27 @@ import gui.external_loader
 from gui import gui_helpers
 from misc.defs import PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT, NEXT_X, NEXT_Y, NEXT_T
 
+
 class LoaderEvents:
+
+    """
+    Kasitteele latausvalikon  specifeja tapahtumia
+    """
+
     def __init__(self):
         self.loader = entity.file_util.Loader()
 
     def tick(self, screen, events, options):
+        """
+        Jokaisen ruudun piiroksen aikana kasitellaan hiirinappauspainallukset 
+        mikali painetaan jotain nappulaa.
+
+        Args:
+            screen: pygame ruutu johon lauta halutaan pirtaa
+            events: pygamen tapahtumat joita kasitellaan
+            options: Laudan ja AI:n asetukset
+        """
+
         gui.external_board.render(
             screen, options, self.loader.states[self.loader.cursor])
         for event in events:

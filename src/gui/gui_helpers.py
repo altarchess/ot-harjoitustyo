@@ -1,10 +1,21 @@
 import pygame
 from misc.defs import GRAY, RED, BLACK, BUTTON_FONT
 
-# Piirra nappula tekstilla
-
 
 def draw_button(screen, x_cord, y_cord, text, active):
+    """
+    Piirtaa textilaatikon, eli nappulan
+
+    Args:
+        x_cord: textiboxin x alkukordinaatti
+        y_cord: textiboxin y alkukordinaatti
+        text: texti joka ruutuun piirretaan
+        active: onko ruutu aktiivinen, jos on piirretaan punaisella!
+
+    Returns:
+        Laatikon leveys pixeleina
+    """
+
     # muutetaan napin varia jos cursori on napin paalla
     color = GRAY
     if active:
@@ -22,10 +33,21 @@ def draw_button(screen, x_cord, y_cord, text, active):
 
     return width + 10  # text + empty space
 
-# tarkistaa onko cursori laatikon paalla
-
 
 def cursor_on_box(x_cord, y_cord, width, height):
+    """
+    Tarkistaa onko cursori laatikon paalla
+
+    Args:
+        x_cord: laatikon x alkukordinaatti
+        y_cord: laatikon y alkukordinaatti
+        width: laatikon leveys
+        height: laatikon korkeus
+
+    Returns:
+        Tosi jos on laatikon paalla, Epatosi jos ei ole
+    """
+
     # hiiren kordinaatit
     cord = pygame.mouse.get_pos()
     # tarkistetaan onko laatikon sisalla
@@ -33,10 +55,21 @@ def cursor_on_box(x_cord, y_cord, width, height):
         return True
     return False
 
-# tarkistaa onko cursori tekstilaatikon paalla
-
 
 def cursor_on_text_box(x_cord, y_cord, text, font):
+    """
+    Tarkistaa onko cursori laatikon paalla
+
+    Args:
+        x_cord: laatikon x alkukordinaatti
+        y_cord: laatikon y alkukordinaatti
+        text: laatikon texti
+        font: textin fontti
+
+    Returns:
+        Tosi jos on laatikon paalla, Epatosi jos ei ole
+    """
+
     # luodaan teksti
     text = font.render(text, True, BLACK)
 
