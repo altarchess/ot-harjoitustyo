@@ -12,11 +12,10 @@ class Settings:
     def __init__(self):
         self.settings = []
         self.settings.append(Setting(AI_LEVEL, [1, 2, 3, 4, 5], 2))
-        self.settings.append(Setting(SHOW_LEGAL, ["ON", "OFF"]))
+        self.settings.append(Setting(SHOW_LEGAL, ["ON", "OFF"], 0))
 
     def get_setting(self, name):
         for setting in self.settings:
             if name == setting.name:
                 return setting.value_array[setting.index]
         return 0
-        
