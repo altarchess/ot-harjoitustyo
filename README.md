@@ -24,6 +24,8 @@ poetry run invoke start
 
 [Tuntikirjanpito](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[Testausdokumentti](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
 [Kayttöohje](https://github.com/altarchess/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 ## Komentorivitoiminnot
