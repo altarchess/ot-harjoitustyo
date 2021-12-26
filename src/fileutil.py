@@ -1,8 +1,8 @@
 import copy
 import os
 import pygame
-import othelloboard.internalboard
-import othelloboard.externalboard
+import entity.internalboard
+import gui.externalboard
 import guihelpers
 from defs import *
 
@@ -14,17 +14,17 @@ class Loader():
             savefile = open(SAVE_FILE, "r")
             rivit = savefile.readlines()
             for rivi in rivit:
-                board = othelloboard.internalboard.Board()
+                board = entity.internalboard.Board()
                 for i in range(N_SQUARES):
                     board.set_piece(i, int(rivi[i]) - 1)
                 self.states.append(copy.deepcopy(board))
             savefile.close()
         if len(self.states) == 0:
-            self.states.append(othelloboard.internalboard.Board())
+            self.states.append(entity.internalboard.Board())
         self.cursor = len(self.states) - 1
 
     def tick(self, screen, events, options):
-        othelloboard.externalboard.render(
+        gui.externalboard.render(
             screen, options, self.states[self.cursor])
         for event in events:
             if event.type == pygame.MOUSEBUTTONDOWN:

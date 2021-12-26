@@ -1,8 +1,8 @@
 import math
 import pygame
 from defs import *
-from othelloboard.internalboard import *
-import othelloboard.externalboard
+from entity.internalboard import *
+import gui.externalboard
 import engine.movegen
 import engine.ai
 import guihelpers
@@ -13,7 +13,7 @@ class GameEvents:
         self.board = Board()
 
     def tick(self, screen, events, loader, options):
-        othelloboard.externalboard.render(screen, options, self.board)
+        gui.externalboard.render(screen, options, self.board)
 
         guihelpers.draw_button(screen, ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, guihelpers.cursor_on_text_box(
             ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, BUTTON_FONT))
@@ -40,7 +40,7 @@ class GameEvents:
                         if move.start == square_from_xy(lauta_x, lauta_y):
                             self.board.make_move(move)
                 if guihelpers.cursor_on_text_box(ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T, BUTTON_FONT):
-                    engine.ai.alpha_beta(options.get_setting(AI_LEVEL),
+                    engine.ai.alpha_beta(options.settings.get_setting(AI_LEVEL),
                                          0, self.board, -10**19, 10**19)
                     if self.board.best_move != -1:
                         self.board.make_move(self.board.best_move)

@@ -1,6 +1,6 @@
 import pygame
 from defs import *
-from othelloboard.internalboard import *
+from entity.internalboard import *
 import engine.movegen
 import guihelpers
 
@@ -36,7 +36,7 @@ def render(screen, options, board):
                 pygame.draw.circle(screen, BLACK, (X_OFFSET + x * CELL_SIZE + CELL_SIZE /
                                                    2, Y_OFFSET + y * CELL_SIZE + CELL_SIZE / 2), PIECE_SIZE)
 
-    if options.get_setting(SHOW_LEGAL) == "ON":
+    if options.settings.get_setting(SHOW_LEGAL) == "ON":
         gen = engine.movegen.MoveGen()
         gen.generate(board)
         for move in gen.move_list:

@@ -1,5 +1,4 @@
 import math
-import pygame
 from defs import *
 import engine.movegen
 

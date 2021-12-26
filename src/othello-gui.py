@@ -1,10 +1,9 @@
-from copy import deepcopy
 import copy
 import pygame
 import screens.gameevents
+import screens.settingsevents
 import fileutil
 import guihelpers
-import settings
 from defs import *
 
 # luodaan ruutu
@@ -14,7 +13,7 @@ pygame.display.set_caption("Othello GUI")
 ACTIVE_SCREEN = PLAY
 game = screens.gameevents.GameEvents()
 loader = fileutil.Loader()
-options = settings.Settings()
+options = screens.settingsevents.SettingsEvents()
 # ns. Pelilooppi.
 RUNNING = True
 while RUNNING:
