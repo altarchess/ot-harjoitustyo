@@ -2,7 +2,7 @@ import copy
 import pygame
 import gui.gameevents
 import gui.settingsevents
-import fileutil
+import gui.loaderevents
 import gui.guihelpers as guihelpers
 from defs import *
 
@@ -12,7 +12,7 @@ pygame.display.set_caption("Othello GUI")
 
 ACTIVE_SCREEN = PLAY
 game = gui.gameevents.GameEvents()
-loader = fileutil.Loader()
+loader = gui.loaderevents.LoaderEvents()
 options = gui.settingsevents.SettingsEvents()
 # ns. Pelilooppi.
 RUNNING = True
