@@ -6,4 +6,5 @@
 | 7.12 | 4 | pylint, koodin laatu, toiminnallisuus, release 1, etc. |
 |14.12 | 3 | asetukset, kayttöohje jne|
 |25.12 | 4 | Koodin laatuparannuksia |
-| yht   | 13   |  
+|26.12 | 6 | pylint, pytest, dokumentaatio |
+| yht   | 23   |  
