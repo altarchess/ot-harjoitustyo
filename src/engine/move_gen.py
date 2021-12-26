@@ -1,5 +1,5 @@
 import entity.internal_board
-from defs import *
+from misc.defs import *
 
 
 class MoveGen:

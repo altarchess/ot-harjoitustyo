@@ -1,5 +1,5 @@
 import pygame
-from defs import *
+from misc.defs import *
 from entity.internal_board import *
 import engine.move_gen
 from gui import gui_helpers

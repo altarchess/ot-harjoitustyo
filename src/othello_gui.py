@@ -4,9 +4,9 @@ import gui.game_events
 import gui.settings_events
 import gui.loader_events
 from gui import gui_helpers
-from defs import WIDTH, HEIGHT, PLAY, ENGINE_MOVE_X, ENGINE_MOVE_Y
-from defs import OPTIONS_X, OPTIONS_Y, OPTIONS_T, BUTTON_FONT
-from defs import LOAD_X, LOAD_Y, LOAD_T, BLACK, LOAD, SETTINGS
+from misc.defs import WIDTH, HEIGHT, PLAY, ENGINE_MOVE_X, ENGINE_MOVE_Y
+from misc.defs import OPTIONS_X, OPTIONS_Y, OPTIONS_T, BUTTON_FONT
+from misc.defs import LOAD_X, LOAD_Y, LOAD_T, BLACK, LOAD, SETTINGS
 
 # luodaan ruutu
 screen = pygame.display.set_mode((WIDTH, HEIGHT))

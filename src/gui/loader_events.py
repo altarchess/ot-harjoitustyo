@@ -3,7 +3,7 @@ import entity.file_util
 import gui.external_board
 import gui.external_loader
 from gui import gui_helpers
-from defs import PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT, NEXT_X, NEXT_Y, NEXT_T
+from misc.defs import PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT, NEXT_X, NEXT_Y, NEXT_T
 
 class LoaderEvents:
     def __init__(self):

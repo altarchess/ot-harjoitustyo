@@ -1,4 +1,4 @@
-from defs import *
+from misc.defs import *
 
 
 class Setting:

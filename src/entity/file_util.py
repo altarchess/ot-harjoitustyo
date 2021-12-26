@@ -1,7 +1,7 @@
 import copy
 import os
 import entity.internal_board
-from defs import *
+from misc.defs import *
 
 
 class Loader():

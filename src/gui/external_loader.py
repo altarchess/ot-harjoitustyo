@@ -1,5 +1,5 @@
 from gui import gui_helpers
-from defs import *
+from misc.defs import *
 def render(screen):
     gui_helpers.draw_button(screen, PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, gui_helpers.cursor_on_text_box(
         PREVIOUS_X, PREVIOUS_Y, PREVIOUS_T, BUTTON_FONT))

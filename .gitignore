@@ -22,3 +22,7 @@ src/screens/__pycache__/
 src/gui/__pycache__/
 
 src/tests/entity/__pycache__/
+
+src/tests/__pycache__/
+
+src/tests/engine/__pycache__/

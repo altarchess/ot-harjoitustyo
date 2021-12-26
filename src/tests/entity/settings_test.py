@@ -1,6 +1,6 @@
 import unittest
 from entity.settings import Settings
-from defs import SHOW_LEGAL
+from misc.defs import SHOW_LEGAL
 
 class TestBoard(unittest.TestCase):
     def setUp(self):

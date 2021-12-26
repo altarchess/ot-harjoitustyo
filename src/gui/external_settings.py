@@ -1,6 +1,6 @@
 from gui import gui_helpers
-from defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, X_OFFSET
-from defs import OPTIONS_Y_OFFSET, BUTTON_FONT
+from misc.defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, X_OFFSET
+from misc.defs import OPTIONS_Y_OFFSET, BUTTON_FONT
 
 
 def render(screen, events, settings):

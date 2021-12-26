@@ -2,7 +2,7 @@ import pygame
 import entity.settings
 import gui.external_settings
 from gui import gui_helpers
-from defs import X_OFFSET, OPTIONS_Y_OFFSET, BUTTON_FONT
+from misc.defs import X_OFFSET, OPTIONS_Y_OFFSET, BUTTON_FONT
 
 class SettingsEvents:
     def __init__(self):

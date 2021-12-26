@@ -1,5 +1,5 @@
 import math
-from defs import *
+from misc.defs import *
 import engine.move_gen
 
 # Auttaja funktiot

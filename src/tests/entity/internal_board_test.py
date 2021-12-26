@@ -1,6 +1,6 @@
 import unittest
 import random
-from defs import BLACK_PIECE, ONGOING, WHITE_WIN, BLACK_WIN, N_SQUARES
+from misc.defs import BLACK_PIECE, ONGOING, WHITE_WIN, BLACK_WIN, N_SQUARES
 from entity.internal_board import Board, x_from_square, y_from_square
 from entity.internal_board import square_from_xy
 from engine.move_gen import Move

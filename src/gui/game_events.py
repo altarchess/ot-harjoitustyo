@@ -5,10 +5,10 @@ import gui.external_board
 import engine.move_gen
 import engine.ai
 from gui import gui_helpers
-from defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T 
-from defs import SAVE_X, SAVE_Y, SAVE_T, LOAD_X, LOAD_Y, LOAD_T
-from defs import NEW_X, NEW_Y, NEW_T, OPTIONS_X, OPTIONS_T, OPTIONS_T
-from defs import BUTTON_FONT, CELL_SIZE, X_OFFSET, Y_OFFSET
+from misc.defs import ENGINE_MOVE_X, ENGINE_MOVE_Y, ENGINE_MOVE_T 
+from misc.defs import SAVE_X, SAVE_Y, SAVE_T, LOAD_X, LOAD_Y, LOAD_T
+from misc.defs import NEW_X, NEW_Y, NEW_T, OPTIONS_X, OPTIONS_T, OPTIONS_T
+from misc.defs import BUTTON_FONT, CELL_SIZE, X_OFFSET, Y_OFFSET
 
 
 class GameEvents:

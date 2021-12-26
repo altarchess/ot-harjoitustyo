@@ -1,5 +1,5 @@
 import copy
-from defs import *
+from misc.defs import *
 from engine.move_gen import MoveGen
 
 
