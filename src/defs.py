@@ -4,8 +4,8 @@ import pygame
 SAVE_FILE = "saved.othello"
 
 # Kayttoliittyman moodit
-PLAY     = 1
-LOAD     = 2
+PLAY = 1
+LOAD = 2
 SETTINGS = 3
 
 # Naytto
@@ -25,6 +25,10 @@ X_OFFSET = 10
 Y_OFFSET = 60
 CELL_SIZE = 60
 PIECE_SIZE = 25
+
+# Asetukset
+AI_LEVEL = "AI level"
+SHOW_LEGAL = "Show legal moves"
 
 # Napit ja muu grafiikka
 pygame.init()
