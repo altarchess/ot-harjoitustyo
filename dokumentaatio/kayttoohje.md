@@ -34,6 +34,7 @@ Pelinäkymässä käyttäjä voi syöttää siirtoja painamalla ruutua johon hal
  ![image](https://user-images.githubusercontent.com/57199282/146084816-9abbaa92-7b06-4415-90e5-abc445f76962.png)
 
  Asetusnäkymässa voi vaihtaa asetuksia painamalla niitä
+ 
  ![image](https://user-images.githubusercontent.com/57199282/147420269-cf85b90c-6656-41de-8194-7121213ef47e.png)
 
 
