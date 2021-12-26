@@ -21,6 +21,8 @@ Sovelluksen tietomallin muodostavat lauta ja latausluokka
 
 ![image](https://user-images.githubusercontent.com/57199282/147420890-8c8a7df7-a58a-4b6b-8ca8-67a7d6e4ce38.png)
 
+Toiminnallisuudesta vastaavat samojen luokkien lisäksi Ai luokka, joka käyttää MoveGen tietorakenetta ja luokkaa apunaan
+
 
 
 
